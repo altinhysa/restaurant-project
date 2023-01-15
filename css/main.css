@@ -1,0 +1,115 @@
+:root {
+    --main-dark: #0e1721;
+    --gold-yellow: #ffc999;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Crimson Text', serif;;
+    background-color: var(--main-dark);
+    color: white;
+    font-weight: 400;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul, li {
+    list-style-type: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.gold-yellow {
+    color: var(--gold-yellow);
+}
+
+.btn {
+    padding: .7em 1.3em;
+    border: 1px solid var(--gold-yellow);
+    color: var(--gold-yellow);
+}
+
+.header {
+    padding: 1rem;
+    background-size: cover;
+    height: 100vh;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-mobile i{
+    font-size: 1.3rem;
+    padding: .3rem;
+    border: 1px solid white ;
+}
+
+.nav-list {
+    display: none;
+}
+
+.fixed-nav {
+    padding: .2em;
+    font-size: 2rem;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-dark);
+    
+}
+
+.fixed-nav > * {
+    margin: 1em 0;
+}
+
+.headerContent {
+    text-align: center;
+    width: 90%;
+    padding: 10em 0;
+    margin: 0 auto;
+}
+
+.headerContent > h1 {
+    font-size: 2.3rem;
+    margin: .3em 0 .6em 0;
+    font-weight: 400;
+    letter-spacing: 1.7px;
+}
+
+footer {
+    padding: 1em;
+    color: #d0d7df;
+}
+
+.footer-col > *, .footer-content:last-child > * {
+    margin: 1em 0;
+    font-size: 1.2rem;
+}
+
+@media screen and (min-width: 600px){
+    .container {
+        max-width: 1100px;
+        padding: 4rem;
+        margin-inline: auto;
+    }
+    
+}
+
