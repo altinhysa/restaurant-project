@@ -1,0 +1,40 @@
+:root {
+    --main-dark: #0e1721;
+    --gold-yellow: #ffc999;
+}
+
+.header {
+    background-image: url(../images/home/headerBackground.jpg);
+}
+
+.headerContent {
+    padding: 5em 0;
+}
+
+.login-details {
+    text-align: left;
+}
+
+form > * {
+    display: block;
+    margin: 1em 0;
+}
+
+.login-details h1 {
+    margin: 0 0 .4em 0;
+    color: var(--gold-yellow);
+}
+
+input {
+    margin-bottom: 1em;
+    width: 100%;
+    padding: 1em;
+    background: none;
+    color: white;
+    border: none;
+    border-bottom: 1px solid #d0d7df;
+}
+
+input::placeholder {
+    color: #d0d7df;
+}
