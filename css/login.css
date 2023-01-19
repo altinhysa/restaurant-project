@@ -13,16 +13,23 @@
 
 .login-details {
     text-align: left;
+    background: rgba(0,0,0,0.2);
+    padding: 1em;       
 }
 
 form > * {
     display: block;
-    margin: 1em 0;
+    margin: .5em 0;
 }
 
 .login-details h1 {
     margin: 0 0 .4em 0;
     color: var(--gold-yellow);
+}
+
+.login-details h3 {
+    font-size: 1rem;
+    font-weight: normal;
 }
 
 input {
@@ -37,4 +44,20 @@ input {
 
 input::placeholder {
     color: #d0d7df;
+}
+
+
+.underline {
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 700px){
+    .login-container {
+        display: flex;
+    }
+    .login-photo{
+        width: 70%;
+        background-image: url(../images/menu/Background-menu.jpg);
+        background-size: cover;
+    }
 }
