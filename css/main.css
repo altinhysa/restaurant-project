@@ -9,6 +9,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-weight: 400;
 }
 
 body {
@@ -132,6 +133,9 @@ footer {
         width: 50%;
         display: flex;
         justify-content: space-between;
+        text-transform: uppercase;
+        font-size: .8rem;
+        font-weight: 500;
     }
 
     .nav-item:first-child {

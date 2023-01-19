@@ -1,3 +1,7 @@
 .header{
     background-image: url(../images/contact/Contact-img.jpg);
 }
+
+.nav-item:nth-child(4) .nav-link{
+    color: var(--gold-yellow);
+}

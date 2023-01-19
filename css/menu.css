@@ -3,6 +3,9 @@
     --gold-yellow: #ffc999;
 }
  
+.nav-item:nth-child(3) .nav-link{
+    color: var(--gold-yellow);
+}
 
 .header{
     background-image: url(../images/menu/Background-menu.jpg);
