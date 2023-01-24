@@ -32,6 +32,10 @@ a {
     text-decoration: none;
 }
 
+i:before {
+    font-weight: 900;
+}
+
 .gold-yellow {
     color: var(--gold-yellow);
 }
@@ -91,9 +95,11 @@ a {
 
 .headerContent {
     text-align: center;
-    width: 90%;
-    padding: 10em 0;
-    margin: 0 auto;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .headerContent > h1 {
@@ -154,6 +160,9 @@ footer {
         justify-content: space-between;
     }
 
+    .footer-content:last-child {
+        text-align: right;
+    }
     .nav-item:last-child {
         margin-top: 0;
     }

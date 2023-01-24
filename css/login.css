@@ -7,12 +7,15 @@
     background-image: url(../images/home/headerBackground.jpg);
 }
 
-.headerContent {
-    padding: 5em 0;
-}
 
 .nav-item:nth-child(5) .nav-link{
     color: var(--gold-yellow);
+}
+
+.login-content {
+    height:90vh;
+    display: grid;
+    align-items: center;
 }
 
 .login-details {
@@ -58,6 +61,8 @@ input::placeholder {
 @media screen and (min-width: 700px){
     .login-container {
         display: flex;
+        width: 80%;
+        margin: 0 auto;
     }
     .login-photo{
         width: 70%;
