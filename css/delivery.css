@@ -1,0 +1,15 @@
+.header {
+    background-image: url(../images/home/headerBackground.jpg);
+}
+
+.headerContent > input {
+    width: 50%;
+    padding: 1.2em;
+    border-radius: 3em;
+    border: none;
+}
+
+input::placeholder {
+    font-size: 1.2rem;
+    vertical-align: middle;
+}

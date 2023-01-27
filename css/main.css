@@ -166,5 +166,9 @@ footer {
         margin-top: 0;
     }
     
+
+    .headerContent > h1 {
+        font-size: 3.5rem;
+    }
 }
 
