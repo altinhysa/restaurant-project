@@ -1,7 +1,20 @@
+:root {
+    --main-dark: #0e1721;
+    --gold-yellow: #ffc999;
+}
+
+
 .header{
     background-image: url(../images/contact/Contact-img.jpg);
     background-size:cover;
 }
+
+
+
+.headerContent{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
 
 .nav-item:nth-child(4) .nav-link{
     color: var(--gold-yellow);
@@ -18,6 +31,14 @@
 
 .icon-contact {
     margin-bottom: 1em;
+}
+
+.icon-contact i{
+    background: white;
+    color: var(--main-dark);
+    padding: 0.5em;
+    font-size: 1.5rem;
+    border-radius: 50%;
 }
 
 .contact-details h3 {
@@ -60,4 +81,25 @@
 
 .map iframe{
     width: 100%;
+}
+
+@media screen and (min-width: 700px) {
+    .contact-starters{
+        display: flex;
+        padding: 5em;
+    }
+
+    .contact-info, .contact-form{
+        width: 45%;
+    }
+
+    .button-contact{
+        /* padding: 0 0 .3em 0; */
+        display: flex;
+        align-items: center;
+    }
+
+    .icon-contact{
+        padding: 0 1em 0 0 ;
+    }
 }
