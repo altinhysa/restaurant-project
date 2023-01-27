@@ -11,6 +11,20 @@
     background-image: url(../images/menu/Background-menu.jpg);
 }
 
+.information{
+    background-color: rgba(0, 0, 0, 0.6);
+    
+}
+
+.information-section {
+    padding: 0;
+}
+
+.headerContent{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+
 section{
     text-align: center;
     padding: 1em;
@@ -107,17 +121,10 @@ section{
         padding: 1em 0 0 0;
     }
 
-    .information-section {
-        padding: 0;
-    }
-
+   
     .information{
-        background-color: rgba(0, 0, 0, 0.6);
         width: 100%;
     }
 
-    .headerContent{
-        background-color: rgba(0, 0, 0, 0.6);
-    }
     
 }
