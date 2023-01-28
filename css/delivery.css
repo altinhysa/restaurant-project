@@ -11,6 +11,10 @@
     background-color: var(--main-dark);
 }
 
+.nav-item:nth-child(5) .nav-link{
+    color: var(--gold-yellow);
+}
+
 input::placeholder {
     color: white;
     font-size: 1.2rem;
@@ -31,7 +35,7 @@ input::placeholder {
 .product {
     text-align: center;
     border: 1px solid var(--gold-yellow);
-    padding: .3em;
+    padding: .5em;
     margin-bottom: 2em;
 }
 
