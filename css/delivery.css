@@ -32,6 +32,10 @@ input::placeholder {
     color: var(--gold-yellow);
 }
 
+.starters-title > h1 {
+    font-size: 3rem;
+}
+
 .product {
     text-align: center;
     border: 1px solid var(--gold-yellow);
@@ -61,6 +65,15 @@ input::placeholder {
 }
 .food-items > p {
     margin: .4em 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#total {
+    font-size: 1.25rem;
+}
+
+.order-button {
     display: flex;
     justify-content: space-between;
 }
