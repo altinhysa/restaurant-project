@@ -19,7 +19,7 @@
       document.getElementById("cart").appendChild(itemElement);
     
       // Update the total cost display
-      document.getElementById("total").innerText = "Total: $" + total;
+      document.getElementById("total").innerText = " $" + total;
     }
     
     // Add an event listener to each add button
@@ -58,4 +58,20 @@
         let price = document.getElementById("price-6").innerText;
         addToCart(item, price);
       });
-      
+
+    document.getElementById("clear").addEventListener("click", function(){
+        document.getElementById("total").innerHTML = "$0";
+        document.getElementById("cart").innerHTML = "";
+        cart = [];
+    });
+    
+
+    document.getElementById("order-now").addEventListener("click", function(){
+       
+        if( cart.length > 0 ){
+            window.location.href = "checkout.html";
+        } else {
+            
+        }
+        
+    });

@@ -65,10 +65,11 @@
 .section-two--photo{
     position: relative;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .section-two--photo img {
-    transition: all .2s ease-in;
+    transition: transform .4s ease-in;
 }
 
 .section-two--details{
@@ -77,10 +78,11 @@
     z-index: 1;
     bottom: 20px;
     left: 20px;
+    
 }
 
 .section-two--photo:hover .section-two--details{
-    display: block;
+    display: block;    
 }
 
 .section-two--photo:hover img {
@@ -213,7 +215,7 @@
         grid-gap: 30px;
         place-items: center;    
         grid-template-columns: 1fr 2fr 1fr;
-        grid-template-rows: 1fr 1.5fr 1.5fr;
+        grid-template-rows: .5fr 1.5fr 1.5fr;
         grid-template-areas: 
             "tradition tradition tradition"
             "descriptionOne sectionOneImg descriptionThree"
@@ -221,7 +223,13 @@
     }
 
     .tradition {
+        padding: 1em 0;
         grid-area: tradition;
+    }
+
+    .description-title {
+        font-size: 1.3rem;
+        margin: .4em 0;
     }
 
     .description-one {
@@ -253,6 +261,20 @@
     
     .section-two--photos {
         display: flex;
+    }
+
+    .section-two--details {
+        width: 100%;
+        padding: 1em;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .menu-description {
+        font-size: .8rem;
+    }
+
+    .menu > h2, .section-four > h2, .contact-us > h1{
+        font-size: 3rem;
     }
 
     .menu-grid--container {
