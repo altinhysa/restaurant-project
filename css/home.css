@@ -129,11 +129,20 @@
 .section-four {
     background-image: url(../images/home/section-four.jpg);
     background-size: cover;
-    backdrop-filter: invert(80%);
     text-align: center;
-    padding: 3em 1em;
 }
 
+.section-four--container {
+    padding: 3em 1em;
+
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+.section-four--container > p {
+    width: 30%;
+    margin-inline: auto;
+}
 
 .section-four h2 {
     margin: 1.2em 0 1.7em 0;

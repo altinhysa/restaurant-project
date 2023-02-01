@@ -5,36 +5,42 @@ let email = document.getElementById('email');
 let password = document.getElementById('password');
 let password2 = document.getElementById('password2');
 let button = document.getElementById('sign');
+let errorMsg = document.getElementById('errorMsg');
 
 
 button.addEventListener("click", function(){
-    if(name.value === ""){
-        name.style.border = "1px solid red";
-    }
-    if(surname.value === ""){
-        surname.style.border = "1px solid red";
-    }
-    if(number.value === ""){
-        number.style.border = "1px solid red";
-    }
-    if(email.value === ""){
-        email.style.border = "1px solid red";
-    }
-    if(password.value === ""){
-        password.style.border = "1px solid red";
-    }
-    if(password2.value === ""){
-        password2.style.border = "1px solid red";
-    }
-
+    // if(name.value === ""){
+    //     name.style.border = "1px solid red";
+    // }
+    // if(surname.value === ""){
+    //     surname.style.border = "1px solid red";
+    // }
+    // if(number.value === ""){
+    //     number.style.border = "1px solid red";
+    // }
+    // if(email.value === ""){
+    //     email.style.border = "1px solid red";
+    // }
+    // if(password.value === ""){
+    //     password.style.border = "1px solid red";
+    // }
+    // if(password2.value === ""){
+    //     password2.style.border = "1px solid red";
+    // }
+        if(areInputsEmpty()){
+            highlightEmptyInputs();
     
-    if(validatePassword(password.value) !== true){
-        alert("Password should contain symbols")
-    }
+            if(arePasswordsSame(password.value, password2.value) == false){
+                errorMsg.innerHTML = "Passwords should include upper case and symbols or should be the same";
+            }
+        } else {
+                window.location.href = "login.html";
+            
+        }
 
-    if(arePasswordsSame(password.value, password2.value) == false){
-        alert("Passwords are not the same")
-    }
+        
+    
+    
 });
 
 function validatePassword(password) {
@@ -43,17 +49,29 @@ function validatePassword(password) {
   }
 
 function arePasswordsSame(password1, password2) {
-    return password1 === password2;
+    return validatePassword(password1) === password2;
   }
   
   
-
-//   function highlightEmptyInputs() {
-//     const inputs = document.querySelectorAll("input");
-//     inputs.forEach(input => {
-//       if (input.value === "") {
-//         input.style.borderColor = "red";
-//       }
-//     });
-//   }
+function highlightEmptyInputs() {
+    const inputs = document.querySelectorAll("input");
+    inputs.forEach(input => {
+      if (input.value === "") {
+        input.style.borderColor = "red";
+      }
+    });
+ }
   
+function areInputsEmpty() {
+    const inputs = document.querySelectorAll("input");
+    let counter = 0;
+    inputs.forEach(input => {
+        if(input.value === "") {
+            counter++;
+        }
+    });
+    if(counter>0){
+        return true;
+    }
+}
+
