@@ -61,6 +61,7 @@
 
     document.getElementById("clear").addEventListener("click", function(){
         document.getElementById("total").innerHTML = "$0";
+        total = 0;
         document.getElementById("cart").innerHTML = "";
         cart = [];
     });
