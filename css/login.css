@@ -58,6 +58,11 @@ input::placeholder {
     text-decoration: underline;
 }
 
+
+.btn {
+    background: none;
+}
+
 @media screen and (min-width: 700px){
     .login-container {
         display: flex;
