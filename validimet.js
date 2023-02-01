@@ -28,5 +28,32 @@ button.addEventListener("click", function(){
     }
 
     
+    if(validatePassword(password.value) !== true){
+        alert("Password should contain symbols")
+    }
+
+    if(arePasswordsSame(password.value, password2.value) == false){
+        alert("Passwords are not the same")
+    }
 });
 
+function validatePassword(password) {
+    const passwordRegex = /^(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/;
+    return passwordRegex.test(password);
+  }
+
+function arePasswordsSame(password1, password2) {
+    return password1 === password2;
+  }
+  
+  
+
+//   function highlightEmptyInputs() {
+//     const inputs = document.querySelectorAll("input");
+//     inputs.forEach(input => {
+//       if (input.value === "") {
+//         input.style.borderColor = "red";
+//       }
+//     });
+//   }
+  
