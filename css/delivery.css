@@ -39,6 +39,7 @@ input::placeholder {
 .product {
     text-align: center;
     border: 1px solid var(--gold-yellow);
+    border-radius: .35em;
     padding: .5em;
     margin-bottom: 2em;
 }

@@ -8,7 +8,7 @@
 }
 
 
-.nav-item:nth-child(5) .nav-link{
+.nav-item:nth-child(6) .nav-link{
     color: var(--gold-yellow);
 }
 
@@ -58,12 +58,25 @@ input::placeholder {
     text-decoration: underline;
 }
 
+
+.btn {
+    background: none;
+}
+
 @media screen and (min-width: 700px){
+
+
     .login-container {
         display: flex;
         width: 80%;
         margin: 0 auto;
     }
+
+    .login-details{
+        width: 30%;
+
+    }
+
     .login-photo{
         width: 70%;
         background-image: url(../images/menu/Background-menu.jpg);
