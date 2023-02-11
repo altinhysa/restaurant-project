@@ -2,6 +2,13 @@
     background-image: url(../images/home/headerBackground.jpg);
 }
 
+.hidden {
+    opacity: 0;
+    transition: all 1s;
+}
+.show {
+    opacity: 1;
+}
 .nav-item:nth-child(2) .nav-link{
     color: var(--gold-yellow);
 }
