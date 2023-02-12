@@ -29,16 +29,26 @@
     
 }
 
+.contact-info{
+    text-align: center;
+}
+
 .icon-contact {
     margin-bottom: 1em;
 }
 
+
+
 .icon-contact i{
-    background: white;
+    background: var(--gold-yellow);
     color: var(--main-dark);
-    padding: 0.5em;
+    padding: 0.5em 0.6em;
     font-size: 1.5rem;
     border-radius: 50%;
+}
+
+.fa-clock{
+    padding: 0.5em !important;
 }
 
 .contact-details h3 {
@@ -86,11 +96,16 @@
 @media screen and (min-width: 700px) {
     .contact-starters{
         display: flex;
+        justify-content: center;
         padding: 5em;
     }
 
     .contact-info, .contact-form{
         width: 45%;
+    }
+
+    .contact-info{
+        text-align: initial;
     }
 
     .button-contact{
@@ -99,7 +114,9 @@
         align-items: center;
     }
 
+
     .icon-contact{
+        margin: 0;
         padding: 0 1em 0 0 ;
     }
 }
