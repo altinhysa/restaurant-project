@@ -9,24 +9,7 @@ let errorMsg = document.getElementById('errorMsg');
 
 
 button.addEventListener("click", function(){
-    // if(name.value === ""){
-    //     name.style.border = "1px solid red";
-    // }
-    // if(surname.value === ""){
-    //     surname.style.border = "1px solid red";
-    // }
-    // if(number.value === ""){
-    //     number.style.border = "1px solid red";
-    // }
-    // if(email.value === ""){
-    //     email.style.border = "1px solid red";
-    // }
-    // if(password.value === ""){
-    //     password.style.border = "1px solid red";
-    // }
-    // if(password2.value === ""){
-    //     password2.style.border = "1px solid red";
-    // }
+
         if(areInputsEmpty()){
             highlightEmptyInputs();
     
